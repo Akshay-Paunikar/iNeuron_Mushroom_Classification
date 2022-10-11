@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushroom Classification</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <div class="title">
+        <h2>Mushroom Classification ML App</h2>
+    </div>
+    <div class="subtitle">
+        <h3>Find out if your Mushroom is "Poisonous" or "Edible"</h3>
+    </div>
+    <div class="var">
+        <form action="/result" method="post">
+            <div class="var1">
+                <label for="Cap-Surface">Cap-Surface :</label>
+                <select id="Cap-Surface" name="Cap-Surface">
+                    <option value="0">Select</option>
+                    <option value="0.950643">Scaly - y</option>
+                    <option value="0.138035">Smooth - s</option>
+                    <option value="-1.487180">Fibrous - f</option>
+                    <option value="-0.674572">Grooves - g</option>
+                </select>
+            </div>
+            <div class="var1">
+                <label for="Bruises">Bruises :</label>
+                <select name="Bruises" id="Bruises">
+                    <option value="0">Select</option>
+                    <option value="-0.844940">No Bruises - f</option>
+                    <option value="1.183516">Yes Bruises - t</option>
+                </select>
+            </div>
+            <div class="var1">
+                <label for="Gill-Spacing">Gill-Spacing :</label>
+                <select name="Gill-Spacing" id="Gill-Spacing">
+                    <option value="0"> Select</option>
+                    <option value="-0.4388642">Close - c</option>
+                    <option value="2.278612">Crowded - w</option>
+                </select>
+            </div>
+            <div class="var1">
+                <label for="Gill-Size">Gill-Size :</label>
+                <select name="Gill-Size" id="Gill-Size">
+                    <option value="0">Select</option>
+                    <option value="-0.663902">Broad - b</option>
+                    <option value="1.506246">Narrow - n</option>
+                </select>
+            </div>
+            <div class="var1">
+                <label for="Gill-Color">Gill-Color :</label>
+                <select name="Gill-Color" id="Gill-Color">
+                    <option value="0">Select</option>
+                    <option value="-1.360273">Buff - b</option>
+                    <option value="0.608073">Pink - p</option>
+                    <option value="1.451650">White - w</option>
+                    <option value="0.045689">Brown - b</option>
+                    <option value="-0.797888">Gray - g</option>
+                    <option value="-0.516696">Chocolate - h</option>
+                    <option value="1.170458">Purple - u</option>
+                    <option value="-0.235504">Black - k</option>
+                    <option value="-1.079081">Red - e</option>
+                    <option value="1.732843">Yellow - y</option>
+                    <option value="0.326881">Orange - o</option>
+                    <option value="0.889266">Green - r</option>
+                </select>
+            </div>
+            <div class="var1">
+                <label for="Stalk-Root">Stalk-Root :</label>
+                <select name="Stalk-Root" id="Stalk-Root">
+                    <option value="0">Select</option>
+                    <option value="-0.506699">Bulbous - b</option>
+                    <option value="1.968104">Equal - e</option>
+                    <option value="0.730702">Club - c</option>
+                    <option value="3.205505">Rooted - r</option>
+                </select>
+            </div>
+            <div class="var1">
+                <label for="Stalk-Surface-Above-Ring">Stalk-Surface-Above-Ring :</label>
+                <select name="Stalk-Surface-Above-Ring" id="Stalk-Surface-Above-Ring">
+                    <option value="0">Select</option>
+                    <option value="0.684699">Smooth - s</option>
+                    <option value="-0.923578">Silky - k</option>
+                    <option value="-2.531854">Fibrous - f</option>
+                    <option value="2.292975">Scaly - y</option>
+                </select>
+            </div>
+            <div class="var1">
+                <label for="Stalk-Surface-Below-Ring">Stalk-Surface-Below-Ring :</label>
+                <select name="Stalk-Surface-Below-Ring" id="Stalk-Surface-Below-Ring">
+                    <option value="0">Select</option>
+                    <option value="0.587742">Smooth - s</option>
+                    <option value="-0.889614">Silky - k</option>
+                    <option value="-2.366969">Fibrous - f</option>
+                    <option value="2.065097">Scaly - y</option>
+                </select>
+            </div>
+            <div class="var1">
+                <label for="Ring-Type">Ring-Type :</label>
+                <select name="Ring-Type" id="Ring-Type">
+                    <option value="0">Select</option>
+                    <option value="0.952434">Pendant - p</option>
+                    <option value="-1.265060">Evanescent - e</option>
+                    <option value="-0.156313">Large - l</option>
+                    <option value="-0.710686">Flaring - f</option>
+                    <option value="0.398061">None - n</option>
+                </select>
+            </div>
+            <div class="var1">
+                <label for="Spore-Print-Color">Spore-Print-Color :</label>
+                <select name="Spore-Print-Color" id="Spore-Print-Color">
+                    <option value="0">Select</option>
+                    <option value="1.427139">White - w</option>
+                    <option value="-0.253406">Brown - n</option>
+                    <option value="-0.673542">Black - k</option>
+                    <option value="-1.093678">Chocolate - h</option>
+                    <option value="0.586867">Green - r</option>
+                    <option value="0.166731">Purple - u</option>
+                    <option value="-1.513814">Orange - o</option>
+                    <option value="1.847276">Yellow - y</option>
+                    <option value="1.007003">Buff - b</option>
+                </select>
+            </div>
+            <div class="var1">
+                <label for="Population">Population :</label>
+                <select name="Population" id="Population">
+                    <option value="0">Select</option>
+                    <option value="0.281707">Several - v</option>
+                    <option value="1.074519">Solitary - y</option>
+                    <option value="-0.511106">Scattered - s</option>
+                    <option value="-1.303918">Numerous - n</option>
+                    <option value="-2.889542">Abundant - a</option>
+                    <option value="-2.096730">Clustered - c</option>
+                </select>
+            </div>
+            <div class="var1">
+                <label for="Habitat">Habitat :</label>
+                <select name="Habitat" id="Habitat">
+                    <option value="0">Select</option>
+                    <option value="-0.874755">Woods - d</option>
+                    <option value="-0.292191">Grasses - g</option>
+                    <option value="1.455504">Paths - p</option>
+                    <option value="0.290374">Leaves - l</option>
+                    <option value="2.038068">Urban - u</option>
+                    <option value="0.872939">Meadows - m</option>
+                    <option value="2.620633">Waste - w</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>        
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/akshay-p-paunikar/"><img src="/static/linkedin.png" width="50px" alt="No Image"></a></li>
+                <li><a href="https://www.facebook.com/akshay.paunikar.12"><img src="/static/facebook.png" height="50px" alt="No Image"></a></li>
+                <li><a href="https://www.instagram.com/akshaypaunikar/"><img src="/static/instagram.jfif" height="50px" alt="No Image"></a></li>
+                <li><a href="https://github.com/Akshay-Paunikar"><img src="/static/github.png" height="50px" alt="No Image"></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
