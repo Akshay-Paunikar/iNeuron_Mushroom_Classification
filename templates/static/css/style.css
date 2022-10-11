@@ -79,7 +79,9 @@ footer{
     list-style: none;
     width: 100%;
     background-color: cornflowerblue;
+    text-align: center;
 }
+
 
 ul li{
     display: inline;
