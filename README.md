@@ -1,2 +1,2 @@
 # iNeuron_Mushroom_Classification
-Various Projects Deployed in Internship
+The complete end to end project with deployment on heroku.
