@@ -6,10 +6,10 @@ The complete end to end project with deployment on heroku.
 <b>Documentation :</b>
 
 <b>1. High Level Document (HLD) :</b> https://drive.google.com/file/d/15BA1pk6p2-88RZLBOPLTFHFaQc7-v1gh/view?usp=sharing <br>
-<b>2. Low Level Document (LLD) :</b> https://drive.google.com/file/d/1_PsLJwPYMtPAVdFeQ9V9wP6udHp7BnYl/view?usp=sharing
-<b>3. Architecture :</b> https://drive.google.com/file/d/1QncNGQ_WE6ujQCajiuZHuFF7SV8oz-dX/view?usp=sharing 
-<b>4. Wireframe Document :</b>https://drive.google.com/file/d/1O2OVImF9_lYG_BSIB7-GjuOUx6z1ZKNc/view?usp=sharing
-<b>5. Detailed Project Report (DPR) :</b> https://drive.google.com/file/d/191kPWu2Lbu4sYg1kDg1YUQNHXpVAX95Z/view?usp=sharing
+<b>2. Low Level Document (LLD) :</b> https://drive.google.com/file/d/1_PsLJwPYMtPAVdFeQ9V9wP6udHp7BnYl/view?usp=sharing <br>
+<b>3. Architecture :</b> https://drive.google.com/file/d/1QncNGQ_WE6ujQCajiuZHuFF7SV8oz-dX/view?usp=sharing <br>
+<b>4. Wireframe Document :</b>https://drive.google.com/file/d/1O2OVImF9_lYG_BSIB7-GjuOUx6z1ZKNc/view?usp=sharing <br>
+<b>5. Detailed Project Report (DPR) :</b> https://drive.google.com/file/d/191kPWu2Lbu4sYg1kDg1YUQNHXpVAX95Z/view?usp=sharing <br>
 
 <b>ABSTRACT :</b>
 Mushrooms have been consumed since earliest history. The word Mushroom is derived from the French word for Fungi and Mold. Now-a-days, Mushroom are popular valuable food because they are low in calories, carbohydrate, Fat, sodium and also cholesterol free. Besides this, Mushroom provides important nutrients, including selenium, potassium, riboflavin, niacin, Vitamin D, proteins and fiber. All together with a long history as food source. Mushroom are important for their healing capacity and properties in traditional medicine. It has reported beneficial effects for health and treatment of some disease. Many nutraceutical properties are described in Mushroom like cancer and antitumor attributes. Mushroom act as antibacterial, immune system enhancer and cholesterol lowering Agent. Additionally, they are important source of bio-active compounds. This work is a machine learning model that classifies mushrooms into 2 classes: Poisonous and Edible depending on the features of the mushroom. During this machine learning implementation, we are going to see which features are important to predict whether a mushroom is poisonous or edible.
