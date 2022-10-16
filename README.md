@@ -10,7 +10,14 @@ The Audubon Society Field Guide to North American Mushrooms contains description
 The main goal is to predict which mushroom is poisonous & which is edible.
 
 Tools Used :
+
 ![image](https://user-images.githubusercontent.com/86560684/196040693-97ab628d-46f1-417f-91fc-d4d023108513.png)
+
+Architecture :
+
+![image](https://user-images.githubusercontent.com/86560684/196040781-a48a0ad3-cdf9-4686-aeec-fae8ba54f6ef.png)
+
+
 
 
 
