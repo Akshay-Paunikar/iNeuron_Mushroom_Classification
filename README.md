@@ -17,7 +17,7 @@ Architecture :
 
 ![image](https://user-images.githubusercontent.com/86560684/196040781-a48a0ad3-cdf9-4686-aeec-fae8ba54f6ef.png)
 
-
+<b> Web Interface :
 
 
 
