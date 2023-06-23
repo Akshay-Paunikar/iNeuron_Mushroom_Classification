@@ -16,12 +16,12 @@ list_of_files = [
     f"{project_name}/components/data_ingestion.py",
     f"{project_name}/components/data_transformation.py",
     f"{project_name}/components/model_trainer.py",
+    f"{project_name}/pipeline/__init__.py",
     f"{project_name}/pipeline/prediction_pipeline.py",
     f"{project_name}/application/app.py",
     f"{project_name}/application/templates/index.html",
     f"{project_name}/application/templates/static/css/style.css",
     f"{project_name}/application/static/css/style.css",
-    f"{project_name}/notebook/dataset/",
     f"{project_name}/notebook/mushroom_EDA.ipynb",
     f"{project_name}/notebook/mushroom_Model.ipynb"    
 ]
