@@ -12,10 +12,10 @@ list_of_files = [
     f"{project_name}/exception.py",
     f"{project_name}/logger.py",
     f"{project_name}/utils.py",
-    f"{project_name}/components/__init__.py"
     f"{project_name}/components/data_ingestion.py",
     f"{project_name}/components/data_transformation.py",
     f"{project_name}/components/model_trainer.py",
+    f"{project_name}/components/__init__.py",
     f"{project_name}/pipeline/__init__.py",
     f"{project_name}/pipeline/prediction_pipeline.py",
     f"{project_name}/application/app.py",
