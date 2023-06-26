@@ -25,7 +25,7 @@ class DataIngestion:
         logging.info("Entered the data ingestion method or component")
         
         try:
-            df = pd.read_csv("mushroom\\notebook\\dataset\\final_data.csv")
+            df = pd.read_csv("mushroom\\notebook\\dataset\\mushroom_data.csv")
             logging.info("Read the raw dataset as dataframe")
             
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path), exist_ok=True)
