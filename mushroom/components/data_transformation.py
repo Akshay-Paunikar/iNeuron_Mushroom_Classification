@@ -7,3 +7,4 @@ from mushroom.exception import CustomException
 from mushroom.logger import logging
 
 from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
+from mushroom.utils import save_object
