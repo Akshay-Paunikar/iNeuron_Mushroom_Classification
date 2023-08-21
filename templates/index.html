@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Mushroom Classification</title>
+</head>
+<body>
+    <div class="login">
+        <h1>Mushroom Classification ML</h1>
+        <form action="{{url_for('predict_datapoint')}}" method="post">
+            <h2>
+                <legend>Predict whether Mushroom is Edible or Poisonous</legend>
+            </h2>
+
+            <div class="mc-1">
+                <label class="form-label">bruises:</label>
+                <select class="form-control" name="bruises" placeholder="Select bruises" required>
+                    <option class="placeholder" selected disabled value="">Select bruises</option>
+                    <option value="yes">yes</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+
+            <div class="mc-1">
+                <label class="form-label">gill-spacing</label>
+                <select class="form-control" name="gill-spacing" placeholder="Select gill-spacing">
+                    <option class="placeholder" selected disabled value="">Select gill-spacing</option>
+                    <option value="close">close</option>
+                    <option value="crowded">crowded</option>
+                </select>
+            </div>
+
+            <div class="mc-1">
+                <label class="form-label">gill-size</label>
+                <select class="form-control" name="gill-size" placeholder="Select gill-size">
+                    <option class="placeholder" selected disabled value="">Select gill-size</option>
+                    <option value="narrow">narrow</option>
+                    <option value="broad">broad</option>
+                </select>
+            </div>
+
+            <div class="mc-1">
+                <label class="form-label">gill-color</label>
+                <select class="form-control" name="gill-color" placeholder="Select gill-color">
+                    <option class="placeholder" selected disabled value="">Select gill-color</option>
+                    <option value="black">black</option>
+                    <option value="brown">brown</option>
+                    <option value="gray">gray</option>
+                    <option value="pink">pink</option>
+                    <option value="white">white</option>
+                    <option value="chocolate">chocolate</option>
+                    <option value="purple">purple</option>
+                    <option value="red">red</option>
+                    <option value="buff">buff</option>
+                    <option value="green">green</option>
+                    <option value="yellow">yellow</option>
+                    <option value="orange">orange</option>
+                </select>
+            </div>
+
+            <div class="mc-1">
+                <label class="form-label">stalk-root</label>
+                <select class="form-control" name="stalk-root" placeholder="Select stalk-root">
+                    <option class="placeholder" selected disabled value="">Select stalk-root</option>
+                    <option value="equal">equal</option>
+                    <option value="club">club</option>
+                    <option value="bulbous">bulbous</option>
+                    <option value="rooted">rooted</option>
+                </select>
+            </div>
+
+            <div class="mc-1">
+                <label class="form-label">ring-type</label>
+                <select class="form-control" name="ring-type" placeholder="Select ring-type">
+                    <option class="placeholder" selected disabled value="">Select ring-type</option>
+                    <option value="pendant">pendant</option>
+                    <option value="evanescent">evanescent</option>
+                    <option value="large">large</option>
+                    <option value="flaring">flaring</option>
+                    <option value="none">none</option>
+                </select>
+            </div>
+
+            <div class="mc-1">
+                <label class="form-label">spore-print-color</label>
+                <select class="form-control" name="spore-print-color" placeholder="Select spore-print-color">
+                    <option class="placeholder" selected disabled value="">Select spore-print-color</option>
+                    <option value="black">black</option>
+                    <option value="brown">brown</option>
+                    <option value="white">white</option>
+                    <option value="chocolate">chocolate</option>
+                    <option value="purple">purple</option>
+                    <option value="buff">buff</option>
+                    <option value="green">green</option>
+                    <option value="yellow">yellow</option>
+                    <option value="orange">orange</option>
+                </select>
+            </div>
+
+            <div class="button">Predict Mushroom Type:
+                <input class="btn btn-primary" type="submit" value="Submit" required>
+            </div>
+        </form>
+        <h3>
+            The Mushroom is {{results}}
+        </h3>
+    </div>    
+</body>
+</html>
